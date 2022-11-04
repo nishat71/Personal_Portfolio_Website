@@ -1,0 +1,2132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url("../NeurialGrotesk/NeurialGrotesk-Light.woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url("../NeurialGrotesk/NeurialGrotesk-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url("../NeurialGrotesk/NeurialGrotesk-Medium.woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url("../NeurialGrotesk/NeurialGrotesk-Bold.woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Neurial Grotesk';
+    src: url("../NeurialGrotesk/NeurialGrotesk-Extrabold.woff");
+    font-weight: 800;
+}
+
+html {
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px auto;
+    scroll-behavior: smooth;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+a,
+button {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+/* Personal Portfolio Website header navbar start */
+._personal_port_header_wrapper {
+    padding: 10px 0;
+    background-color: var(--bg1);
+}
+
+._personal_port_header_nav_wrapper {
+    padding: 20px 0;
+}
+
+._personal_port_header_nav_wrapper_list {
+    margin: 0 auto;
+}
+
+._personal_port_header_nav_wrapper_item {
+    margin: 0 48px 0 0;
+}
+
+._personal_port_header_nav_wrapper_item:last-child {
+    margin-right: 0;
+}
+
+._personal_port_header_nav_wrapper_item_link {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+    position: relative;
+}
+
+._personal_port_header_nav_wrapper_item_link::before {
+    background-image: url('../image/ic.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 8px;
+    bottom: -4px;
+    left: 17px;
+    color: #756BEE;
+    visibility: hidden;
+    transition: .2s all ease;
+}
+
+._personal_port_header_nav_wrapper_item_link:hover::before {
+    visibility: visible;
+}
+._personal_port_header_nav_link_active{
+    position: relative;
+}
+._personal_port_header_nav_link_active::before{
+    background-image: url('../image/ic.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 8px;
+    bottom: -4px;
+    left: 17px;
+    color: #756BEE;
+    visibility: visible;
+}
+._personal_port_header_nav_wrapper_item_link:hover {
+    color: var(--color3) !important;
+}
+
+._personal_port_header_nav_form_btn {
+    display: flex;
+}
+
+._personal_port_header_nav_btn {
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color2) !important;
+    width: 102px;
+    height: 42px;
+    background: var(--color1);
+    border: 0 !important;
+    outline: none !important;
+    transition: .2s all ease;
+}
+
+._personal_port_header_nav_btn:hover {
+    background: var(--color3) !important;
+    color: var(--color2) !important;
+}
+
+._personal_port_header_nav_wrapper_ic_span svg::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+}
+
+/* header herosection */
+._personal_port_header_wrap {
+    padding-top: 85px;
+}
+
+._personal_port_header_details_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 92%;
+    margin: 0 0 20px 0;
+}
+
+._personal_port_header_details_title_span {
+    color: var(--color3);
+    font-style: italic !important;
+    font-family: 'Playfair Display' !important;
+}
+
+._personal_port_header_details_txt {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color4);
+    margin: 0 0 40px 0;
+    max-width: 68%;
+}
+
+._personal_port_header_details_btn_clients {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+._personal_port_header_details_btn {
+    margin-right: 34px;
+}
+
+._personal_port_header_details_btn_link {
+    width: 135px;
+    height: 58px;
+    background-color: var(--color3);
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color2);
+    border: 0;
+    outline: 0;
+    transition: .2s all ease;
+}
+
+._personal_port_header_details_btn_link:hover {
+    background-color: transparent;
+    color: var(--color3);
+    border: 2px solid var(--color3);
+}
+
+._personal_port_header_details_clients {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_header_details_clients_img_group {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_header_img {
+    width: 48px;
+    height: 48px;
+    margin-left: -12px;
+}
+
+._personal_port_header_details_clients_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 47%;
+    margin-left: 12px;
+}
+
+._personal_port_header_r8_bg_img {
+    position: relative;
+    z-index: 10;
+}
+
+._personal_port_header_r8_bg_img::before {
+    position: absolute;
+    content: "";
+    background: url('../image/Union.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+._personal_port_header_r8_img {
+    width: 100%;
+    max-width: 100%;
+}
+
+._personal_port_recent_work {
+    margin-top: 100px;
+}
+
+._personal_port_recent_work_left_cont {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_recent_work_left_cont_line {
+    border-radius: 1px;
+    width: 70px;
+    border-bottom: 2px solid #0F0D1C;
+    margin-right: 16px;
+}
+
+._personal_port_recent_work_left_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--color1);
+}
+
+._personal_port_recent_work_left_cont_span {
+    font-style: italic;
+    color: var(--color3);
+    font-family: 'Playfair Display' !important;
+}
+
+._personal_port_recent_work_r8_cont_list {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_recent_work_r8_cont_list_item {
+    margin-right: 70px;
+}
+
+._personal_port_recent_work_r8_cont_list_item:last-child {
+    margin-right: 0;
+}
+
+._personal_port_recent_work_r8_cont_list_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 3px;
+}
+
+._personal_port_recent_work_r8_cont_list_txt {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #646371;
+}
+
+._personal_port_recent_work_design_group {
+    padding-top: 70px;
+    margin-bottom: -240px;
+}
+
+._personal_port_recent_work_design_img {
+    max-width: 100%;
+}
+
+._personal_port_recent_work_design_details {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._personal_port_recent_work_design_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #0F0D1C;
+}
+
+._personal_port_recent_work_design_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #646371;
+    margin-top: 6px;
+}
+
+._personal_port_recent_work_design_details_span {
+    width: 44px;
+    height: 44px;
+    background: #756BEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._personal_port_recent_work_design_details_span:hover {
+    background: transparent;
+    border: 2px solid #756BEE;
+}
+
+._personal_port_recent_work_design_details_span:hover svg path {
+    stroke: var(--color3);
+}
+
+._personal_port_recent_work_design_details_span svg path {
+    transition: .2s all ease;
+}
+
+/* Personal Portfolio Website client section */
+._personal_port_clients_wrapper {
+    margin: 360px 0 160px;
+}
+
+._personal_port_clients_left_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 85%;
+    margin-bottom: 20px;
+}
+
+._personal_port_clients_left_cont_title_span {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    color: var(--color3);
+}
+
+._personal_port_clients_left_cont_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 66%;
+    margin-bottom: 40px;
+}
+
+._personal_port_clients_left_cont_link {
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+}
+
+._personal_port_clients_left_cont_link:hover {
+    color: var(--color3) !important;
+    border-bottom: 2px solid var(--color3);
+    padding-bottom: 5px;
+}
+
+._personal_port_clients_r8_cont_col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+._personal_port_clients_r8_cont_img_box1,
+._personal_port_clients_r8_cont_img_box2,
+._personal_port_clients_r8_cont_img_box3,
+._personal_port_clients_r8_cont_img_box4 {
+    width: 100%;
+    height: 186px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 42px rgba(117, 107, 238, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._personal_port_clients_r8_cont_img_name1 svg {
+    max-width: 100%;
+}
+
+._personal_clients_box_2 {
+    margin: 30px 0 93px 0;
+}
+
+._personal_port_clients_r8_cont_img_name2 svg {
+    max-width: 100%;
+}
+
+._personal_clients_box_3 {
+    margin: 93px 0 30px 0;
+}
+
+._personal_port_clients_r8_cont_img_name3 svg {
+    max-width: 100%;
+}
+
+._personal_port_clients_r8_cont_img_name4 svg {
+    max-width: 100%;
+}
+
+._personal_port_clients_r8_cont_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Personal Portfolio Website Services start */
+._personal_port_services_wrapper {
+    padding: 100px 0;
+    background-color: var(--bg1);
+}
+
+._personal_port_services_left_cont_main_area {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+._personal_port_services_left_cont_top_area {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_services_left_cont_top_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-right: 28px;
+}
+
+._personal_port_services_left_cont_top_line {
+    width: 446px;
+    height: 2px;
+    background: #EAEAEF;
+}
+
+._personal_port_services_left_cont_top_span {
+    width: 44px;
+    height: 44px;
+    background: #756BEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+    transition: .2s all ease;
+}
+
+._personal_port_services_left_cont_top_span:hover {
+    background: transparent;
+    border: 2px solid #756BEE;
+}
+
+._personal_port_services_left_cont_top_span:hover svg path {
+    stroke: var(--color3);
+}
+
+._personal_port_services_left_cont_top_span svg path {
+    transition: .2s all ease;
+}
+
+._personal_port_services_left_cont_down_span {
+    display: none;
+}
+
+._personal_port_services_left_cont_design_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin: 21px 0 18px 32px;
+}
+
+._personal_port_services_left_design_list {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+._personal_port_services_left_design_list_item {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 28px;
+}
+
+._personal_port_services_left_design_list_item:last-child {
+    margin-right: 0;
+}
+
+._personal_port_services_left_design_list_items_span {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #60C850;
+    margin-right: 12px;
+    border-radius: 50%;
+    transition: .2s all ease-in;
+}
+
+._personal_port_services_r8_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    max-width: 90%;
+    color: var(--color1);
+    margin-bottom: 20px;
+}
+
+._personal_port_services_r8_cont_title_span {
+    font-family: 'Playfair Display';
+    color: var(--color3);
+    font-style: italic;
+}
+
+._personal_port_services_r8_cont_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+._personal_port_services_r8_cont_btn {
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+._personal_port_services_r8_cont_link {
+    width: 167px;
+    height: 58px;
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    background: var(--color1);
+    color: var(--color2) !important;
+    outline: 0 !important;
+    border: 0 !important;
+    transition: .2s all ease;
+}
+
+._personal_port_services_r8_cont_link:hover {
+    background: var(--color3);
+}
+
+/* Personal Portfolio Website portfolio */
+._personal_port_portfolio_wrapper {
+    margin: 160px 0;
+}
+
+._personal_port_portfolio_top_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+._personal_port_portfolio_top_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    max-width: 36%;
+    margin-bottom: 20px;
+}
+
+._personal_port_portfolio_top_cont_title_span {
+    font-family: 'Playfair Display';
+    color: var(--color3);
+    font-style: italic;
+}
+
+._personal_port_portfolio_top_cont_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 43%;
+    color: #646371;
+}
+
+._personal_port_portfolio_navtab {
+    padding-top: 40px;
+}
+
+._personal_port_portfolio_top_cont_btn_grp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+._personal_port_portfolio_top_cont_btn.nav-item {
+    margin: 0 28px 0 0;
+}
+
+._personal_port_portfolio_top_cont_btn.nav-item:last-child {
+    margin-right: 0;
+}
+
+._personal_port_portfolio_design_navtab_wrap {
+    padding-top: 70px;
+}
+
+._personal_port_portfolio_top_cont_btn_link {
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #646371;
+    padding: 8px 20px;
+    height: 42px;
+    border: 0;
+    border: 1px solid #EAEAEF;
+    background-color: transparent;
+    transition: .2s all ease;
+}
+
+._all_btn {
+    color: var(--color2);
+    background-color: var(--color1);
+}
+
+._personal_port_portfolio_top_cont_btn_link:hover {
+    color: var(--color2);
+    background-color: var(--color1);
+}
+
+._personal_port_portfolio_single_design {
+    margin-bottom: 30px;
+}
+
+._personal_port_portfolio_design_details {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._personal_port_portfolio_design_details_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #0F0D1C;
+    margin-bottom: 6px;
+}
+
+._personal_port_portfolio_design_details_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #646371;
+}
+
+._personal_port_portfolio_design_details_span {
+    width: 44px;
+    height: 44px;
+    background: #756BEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._personal_port_portfolio_design_details_span:hover {
+    background: transparent;
+    border: 2px solid #756BEE;
+}
+
+._personal_port_portfolio_design_details_span:hover svg path {
+    stroke: var(--color3);
+}
+
+._personal_port_portfolio_design_details_span svg path {
+    transition: .2s all ease;
+}
+
+._personal_port_portfolio_all_design_btn {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._personal_port_portfolio_all_design_btn_link {
+    width: 160px;
+    height: 58px;
+    background: #0F0D1C;
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF !important;
+    outline: 0 !important;
+    border: 0 !important;
+    transition: .2s all ease;
+}
+
+._personal_port_portfolio_all_design_btn_link:hover {
+    background: var(--color3);
+    color: var(--color2)
+}
+
+/* Personal Portfolio Website testimonial */
+._personal_port_testimonial_wrapper {
+    padding: 100px 0;
+    background-color: var(--bg1);
+}
+
+._personal_port_testimonial_top_cont {
+    margin-bottom: 70px;
+}
+
+._personal_port_testimonial_top_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #0F0D1C;
+    margin-bottom: 20px;
+}
+
+._personal_port_testimonial_top_cont_title_span {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    color: var(--color3)
+}
+
+._personal_port_testimonial_top_cont_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #646371;
+    max-width: 35%;
+}
+
+._personal_port_testimonial_slider_wrap {
+    position: relative;
+}
+
+._personal_port_testimonial_main_wrap {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+._personal_port_testimonial_top_wrap {
+    margin-bottom: 41px;
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_testimonial_top_wrap_span {
+    width: 28px;
+    height: 28px;
+    background: #FFF9E7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._personal_port_testimonial_top_line {
+    width: 282px;
+    height: 2px;
+    background: #EAEAEF;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+
+._personal_port_testimonial_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #686977;
+    max-width: 88%;
+    margin-bottom: 35px;
+}
+
+._personal_port_testimonial_btm_wrap {
+    display: flex;
+    align-items: center;
+}
+
+._personal_port_testimonial_btm_bg_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #FFF9E7;
+    border-radius: 50%;
+}
+
+._personal_port_testimonial_btm_img {
+    max-width: 28px;
+    /* height: 28px; */
+}
+
+._personal_port_testimonial_btm_cont {
+    margin-left: 16px;
+}
+
+._personal_port_testimonial_btm_bg_img_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #FFF9E7;
+    border-radius: 50%;
+}
+
+._personal_port_testimonial_btm_img_2 {
+    width: 50px;
+    height: 50px;
+}
+
+._personal_port_testimonial_btm_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #0B0D21;
+}
+
+._personal_port_testimonial_btm_cont_txt {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #686977;
+    margin-top: 5px;
+}
+
+._personal_port_testimonial_arrows {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -118px;
+    right: 0;
+}
+
+._prev_btn {
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #0F0D1C;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    margin-right: 20px;
+}
+
+._prev_btn:hover {
+    background-color: var(--color3) !important;
+    border: transparent;
+}
+
+._prev_btn svg path {
+    stroke: #0F0D1C;
+    transition: .2s all ease;
+}
+
+._prev_btn:hover svg path {
+    stroke: var(--color2);
+}
+
+._next_btn {
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #0F0D1C;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._next_btn:hover {
+    background-color: var(--color3) !important;
+    border: transparent;
+}
+
+._next_btn svg path {
+    stroke: #0F0D1C;
+    transition: .2s all ease;
+}
+
+._next_btn:hover svg path {
+    stroke: var(--color2);
+}
+
+/* Personal Portfolio Website Contact */
+._personal_port_contact_wrapper {
+    margin: 160px 0;
+}
+
+._personal_port_contact_form_input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 58px;
+    padding: 15px 15px;
+    border: 1px solid #EAEAEF;
+
+}
+
+._personal_port_contact_form_textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 15px 50px;
+    border: 0;
+    border: 1px solid #EAEAEF;
+}
+
+::placeholder {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 1.2; */
+    color: var(--color4);
+}
+
+._personal_port_contact_form_submit {
+    width: 195px;
+    height: 58px;
+    background: var(--color1);
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 !important;
+    outline: 0 !important;
+    transition: .2s all ease;
+}
+
+._personal_port_contact_form_submit:hover {
+    background: var(--color3);
+}
+
+._personal_port_contact_r8_cont {
+    width: 87%;
+    margin-left: auto;
+}
+
+._personal_port_contact_r8_cont_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 92%;
+    margin-bottom: 19px;
+}
+
+._personal_port_contact_r8_cont_title_span {
+    font-family: 'Playfair Display';
+    color: var(--color3);
+    font-style: italic;
+}
+
+._personal_port_contact_r8_cont_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 77%;
+    margin-bottom: 40px;
+    color: var(--color4);
+}
+
+._personal_port_contact_r8_cont_link {
+    font-family: 'Neurial Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3) !important;
+}
+
+._personal_port_contact_r8_cont_link:hover {
+    border-bottom: 2px solid var(--color3);
+    padding-bottom: 5px;
+}
+
+/* Personal Portfolio Website footer */
+._personal_port_footer_wrapper {
+    padding: 100px 0 38px 0;
+    background-color: #FBDE4D;
+}
+
+._personal_port_footer_top_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #0F0D1C;
+    margin-bottom: 70px;
+}
+
+._personal_port_footer_top_title_span {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    color: var(--color3);
+}
+
+._personal_port_footer_grp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 22px 22px;
+    margin-bottom: 30px;
+    height: 92px;
+}
+
+._personal_port_footer_grp_details_title {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #0F0D1C;
+}
+
+._personal_port_footer_grp_details_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #646371;
+}
+
+._personal_port_footer_grp_details_img {
+    width: 48px;
+    height: 48px;
+}
+
+._personal_port_footer_btm {
+    margin-top: 70px;
+    border-top: 1px solid #0F0D1C;
+    border-bottom: 1px solid #0F0D1C;
+    padding: 38px 0;
+}
+
+._personal_port_footer_logo_img {
+    max-width: 153px;
+}
+
+._personal_port_footer_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._personal_port_footer_list_item:last-child {
+    margin-right: 0;
+}
+
+._personal_port_footer_list_item_link {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+}
+
+._personal_port_footer_list_item_link:hover {
+    color: var(--color3) !important;
+}
+
+._personal_port_footer_btm_p {
+    margin-top: 38px;
+}
+
+._personal_port_footer_btm_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0F0D1C;
+}
+
+/* responsive */
+/* Desktop/Laptop */
+@media (max-width:1399px) {
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_header_details_txt {
+        max-width: 80%;
+    }
+
+    ._personal_port_recent_work_r8_cont_list_item {
+        margin-right: 64px;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_left_cont_para {
+        max-width: 77%;
+    }
+
+    /* Personal Portfolio Website Services */
+    ._personal_port_services_r8_cont_title {
+        max-width: 93%;
+    }
+
+    ._personal_port_services_r8_cont_para {
+        max-width: 93%;
+    }
+
+    ._personal_port_services_left_cont_down_span {
+        display: none;
+    }
+
+    /* Personal Portfolio Website portfolio */
+    ._personal_port_portfolio_top_cont_title {
+        max-width: 38%;
+    }
+
+    ._personal_port_portfolio_top_cont_para {
+        max-width: 50%;
+    }
+
+    /* Portfolio Website testimonial */
+    ._personal_port_testimonial_top_cont_para {
+        max-width: 39%;
+    }
+
+    ._personal_port_testimonial_para {
+        max-width: 100%;
+    }
+
+    /* Portfolio Website Contact */
+    ._personal_port_contact_r8_cont_title {
+        max-width: 100%;
+    }
+
+    ._personal_port_contact_r8_cont_para {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:1199px) {
+    ._personal_port_header_nav_wrapper_item {
+        margin: 0 25px 0 0;
+    }
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_header_details_title {
+        font-size: 57px;
+    }
+
+    ._personal_port_header_details_btn_clients {
+        width: 100%;
+    }
+
+    ._personal_port_recent_work_r8_cont_list_item {
+        margin-right: 29px;
+    }
+
+    ._personal_port_recent_work_design_title {
+        font-size: 18px;
+    }
+
+    ._personal_port_recent_work_design_para {
+        font-size: 15px;
+    }
+
+    /* Personal Portfolio Website client */
+
+    ._personal_port_clients_r8_cont_img_name2 svg {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._personal_port_clients_r8_cont_img_name3 svg {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Personal Portfolio Website Services */
+    ._personal_port_services_r8_cont {
+        padding-left: 30px;
+    }
+
+    ._personal_port_services_r8_cont_title {
+        max-width: 100%;
+        font-size: 36px;
+        margin-bottom: 17px;
+    }
+
+    ._personal_port_services_r8_cont_para {
+        max-width: 100%;
+        margin-bottom: 35px;
+        font-size: 17px;
+    }
+
+    ._personal_port_services_left_cont_top_line {
+        width: 367px;
+    }
+
+    ._personal_port_services_left_cont_design_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_services_left_design_list_item {
+        font-size: 17px;
+        margin-right: 18px;
+    }
+
+    ._personal_port_services_left_cont_down_span {
+        display: none;
+    }
+
+    /* Personal Portfolio Website portfolio */
+    ._personal_port_portfolio_top_cont_title {
+        max-width: 50%;
+    }
+
+    ._personal_port_portfolio_top_cont_para {
+        max-width: 75%;
+    }
+
+    ._personal_port_portfolio_design_details_title {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    ._personal_port_portfolio_design_details_para {
+        font-size: 15px;
+    }
+
+    /* Portfolio Website testimonial */
+    ._personal_port_testimonial_top_cont_para {
+        max-width: 100%;
+    }
+
+    ._personal_port_testimonial_top_wrap {
+        margin-bottom: 33px;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    ._personal_port_testimonial_btm_cont_title {
+        font-size: 16px;
+    }
+
+    /* Portfolio Website Contact */
+    ._personal_port_contact_r8_cont_title {
+        font-size: 36px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ._personal_port_contact_r8_cont_para {
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:991px) {
+    ._personal_port_header_nav_wrapper_item {
+        margin: 10px 0 0 0;
+    }
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_herosection_ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ._personal_port_header_wrap {
+        padding-top: 50px;
+    }
+
+    ._personal_port_header_details_title {
+        font-size: 50px;
+        max-width: 100%;
+    }
+
+    ._personal_port_header_details_txt {
+        max-width: 100%;
+    }
+
+    ._personal_port_header_details_btn_clients {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ._personal_port_header_details_btn {
+        margin-right: 0;
+    }
+
+    ._personal_port_header_details_clients {
+        margin: 28px 0 0 8px;
+    }
+
+    ._personal_port_header_details_clients_title {
+        max-width: 100%;
+    }
+
+    ._personal_port_header_r8_cont_img {
+        margin-top: 60px;
+    }
+
+    ._personal_port_recent_work_left_cont {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    ._personal_port_recent_work_r8_cont_list {
+        justify-content: space-between;
+    }
+
+    ._personal_port_recent_work_r8_cont_list_item {
+        margin-right: 0;
+    }
+
+    ._personal_port_recent_work_design {
+        margin-bottom: 40px;
+    }
+
+    ._personal_port_clients_wrapper {
+        margin: 320px 0 100px;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_left_cont_para {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    ._personal_port_clients_r8_cont {
+        margin-top: 40px;
+    }
+
+    /* Personal Portfolio Website Services */
+    ._personal_port_services_r8_cont {
+        padding: 60px 0 0 0;
+    }
+
+    ._personal_port_services_left_design_list {
+        align-items: flex-start;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    ._personal_port_services_left_design_list_item:last-child {
+        margin: 0;
+    }
+
+    ._personal_port_services_left_design_list_item {
+        font-size: 17px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_services_left_cont_main_area {
+        margin-bottom: 28px;
+    }
+
+    ._personal_port_services_left_cont_design_title {
+        font-size: 24px;
+        margin: 28px 0 18px 0;
+    }
+
+    ._personal_port_services_left_cont_top_title {
+        margin: 0 0 8px;
+    }
+
+    ._personal_port_services_left_cont_top_area {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ._personal_port_services_left_cont_top_link {
+        display: none;
+    }
+
+    ._personal_port_services_left_cont_down_span {
+        width: 44px;
+        height: 44px;
+        background: #756BEE;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+    }
+
+    /* Personal Portfolio Website portfolio */
+    ._personal_port_portfolio_wrapper {
+        margin: 100px 0;
+    }
+
+    ._personal_port_portfolio_top_cont_title {
+        max-width: 70%;
+        font-size: 36px;
+    }
+
+    ._personal_port_portfolio_top_cont_btn_link {
+        font-size: 15px;
+    }
+
+    /* Portfolio Website testimonial */
+    ._personal_port_testimonial_arrows {
+        left: 0;
+        bottom: -160%;
+    }
+
+    /* Portfolio Website Contact */
+    ._personal_port_contact_wrapper {
+        margin: 100px 0;
+    }
+
+    ._personal_port_contact_r8_cont {
+        width: 87%;
+        margin: 30px 0 0;
+    }
+
+    ._personal_port_contact_left_cont {
+        margin-top: 38px;
+    }
+
+    ._personal_port_contact_order_form {
+        order: 2;
+    }
+
+    ._personal_port_contact_order_details {
+        order: 1;
+    }
+
+    /* Portfolio Website footer  */
+    ._personal_port_footer_list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0;
+    }
+
+    ._personal_port_footer_logo {
+        margin-bottom: 16px;
+    }
+
+    ._personal_port_footer_list_item {
+        margin: 0 0 6px 0;
+    }
+
+    ._personal_port_footer_list_item:last-child {
+        margin: 0;
+    }
+
+    ._personal_port_footer_btm {
+        padding: 28px 0;
+        margin-top: 40px;
+    }
+
+    ._personal_port_footer_btm_p {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width:767px) {
+    ._personal_port_header_nav_wrapper_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    ._personal_port_header_nav_form_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_header_wrap {
+        padding-top: 38px;
+    }
+
+    ._personal_port_header_details_title {
+        font-size: 43px;
+    }
+
+    ._personal_port_recent_work_left_cont {
+        margin-bottom: 30px;
+    }
+
+    ._personal_port_recent_work_design {
+        margin-bottom: 50px;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_wrapper {
+        margin: 290px 0 100px;
+    }
+
+    ._personal_port_clients_left_cont_title {
+        max-width: 91%;
+    }
+
+    ._personal_port_portfolio_top_cont_para {
+        max-width: 100%;
+    }
+
+    ._personal_port_portfolio_design_navtab_wrap {
+        padding-top: 38px;
+    }
+
+    ._personal_port_portfolio_top_cont_btn.nav-item {
+        margin: 0 20px 20px;
+    }
+
+    /* Portfolio Website testimonial */
+    ._personal_port_testimonial_arrows {
+        left: 0;
+        bottom: -169%;
+    }
+
+    ._personal_port_testimonial_top_line {
+        width: 100%;
+    }
+
+    ._personal_port_testimonial_top_cont_title {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    ._personal_port_testimonial_top_cont_para {
+        max-width: 79%;
+        font-size: 15px;
+    }
+
+    ._personal_port_testimonial_top_cont {
+        margin-bottom: 38px;
+    }
+
+    /* Portfolio Website Contact */
+    ._personal_port_contact_r8_cont_title {
+        font-size: 30px;
+    }
+
+    ._personal_port_contact_wrapper {
+        margin: 70px 0 100px 0;
+    }
+
+    /* Portfolio Website footer */
+    ._personal_port_footer_wrapper {
+        padding: 55px 0 18px 0;
+    }
+
+    ._personal_port_footer_top_title {
+        font-size: 36px;
+        margin-bottom: 38px;
+    }
+
+    ._personal_port_footer_grp {
+        margin-bottom: 20px;
+        padding: 17px 17px;
+    }
+
+    ._personal_port_footer_grp_details_title {
+        margin-bottom: 2px;
+    }
+
+    ._personal_port_footer_btm {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width:575px) {
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_header_r8_cont_img {
+        margin-top: 0;
+    }
+
+    ._personal_port_header_details_title {
+        font-size: 36px;
+        margin: 0 0 12px 0;
+    }
+
+    ._personal_port_header_details_txt {
+        font-size: 16px;
+        margin: 0 0 28px 0;
+    }
+
+    ._personal_port_header_details {
+        margin-top: 66px;
+    }
+
+    ._personal_port_recent_work {
+        margin-top: 60px;
+    }
+
+    ._personal_port_clients_left_cont_para {
+        max-width: 89%;
+        margin-bottom: 28px;
+        font-size: 16px;
+    }
+
+    ._personal_port_recent_work_left_cont {
+        justify-content: flex-start;
+    }
+
+    ._personal_port_herosection_order_details {
+        order: 2;
+    }
+
+    ._personal_port_herosection_order_img {
+        order: 1;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_left_cont_title {
+        max-width: 60%;
+        font-size: 30px;
+    }
+
+    ._personal_port_clients_wrapper {
+        margin: 215px 0 100px;
+    }
+
+    ._personal_port_clients_left_cont {
+        margin-top: 35px;
+    }
+
+    ._personal_port_clients_order_left {
+        order: 2;
+    }
+
+    ._personal_port_clients_order_right {
+        order: 1;
+    }
+
+    /* Personal Portfolio Website Services */
+    ._personal_port_services_wrapper {
+        padding: 55px 0;
+    }
+
+    ._personal_port_services_r8_cont_title {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+
+    ._personal_port_services_r8_cont_para {
+        margin-bottom: 28px;
+        font-size: 16px;
+    }
+
+    /* Personal Portfolio Website portfolio */
+    ._personal_port_portfolio_wrapper {
+        margin: 100px 0;
+    }
+
+    ._personal_port_portfolio_design_details {
+        margin-top: 20px;
+    }
+
+    ._personal_port_portfolio_top_cont_title {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width:420px) {
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_recent_work_r8_cont_list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ._personal_port_recent_work_r8_cont_list_item {
+        margin: 0 0 20px;
+    }
+
+    ._personal_port_header_details_txt {
+        font-size: 14px;
+        margin: 0 0 28px 0;
+        max-width: 97%;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_r8_cont_img_box1,
+    ._personal_port_clients_r8_cont_img_box2,
+    ._personal_port_clients_r8_cont_img_box3,
+    ._personal_port_clients_r8_cont_img_box4 {
+        height: 110px;
+    }
+
+    ._personal_clients_box_2 {
+        margin: 18px 0 55px 0;
+    }
+
+    ._personal_port_clients_r8_cont_img_name1 svg {
+        max-width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    ._personal_port_clients_r8_cont_img_name2 svg {
+        max-width: 72%;
+    }
+
+    ._personal_clients_box_3 {
+        margin: 55px 0 18px 0;
+    }
+
+    ._personal_port_clients_r8_cont_img_name3 svg {
+        max-width: 72%;
+    }
+
+    ._personal_port_clients_r8_cont_img_name4 svg {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._personal_port_clients_left_cont_title {
+        max-width: 72%;
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    ._personal_port_clients_left_cont_para {
+        max-width: 95%;
+        margin-bottom: 28px;
+        font-size: 14px;
+    }
+
+    ._personal_port_clients_left_cont_link {
+        font-size: 14px;
+    }
+
+    /* Personal Portfolio Website Services */
+
+    ._personal_port_services_left_cont_top_title {
+        font-size: 14px;
+    }
+
+    ._personal_port_services_left_cont_design_title {
+        font-size: 22px;
+    }
+
+    ._personal_port_services_left_design_list_item {
+        font-size: 14px;
+    }
+
+    ._personal_port_services_r8_cont_title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    ._personal_port_services_r8_cont_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_services_r8_cont {
+        padding: 22px 0 0 0;
+    }
+
+    ._personal_port_services_r8_cont_link {
+        width: 150px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    /* Personal Portfolio Website portfolio */
+    ._personal_port_portfolio_all_design_btn {
+        margin-top: 18px;
+    }
+
+    ._personal_port_portfolio_top_cont_title {
+        font-size: 26px;
+        margin-bottom: 12px;
+        max-width: 80%;
+    }
+
+    ._personal_port_portfolio_top_cont_para {
+        max-width: 95%;
+        font-size: 14px;
+    }
+
+    ._personal_port_portfolio_navtab {
+        padding-top: 28px;
+    }
+
+    ._personal_port_portfolio_design_details_title {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    ._personal_port_portfolio_design_details_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_portfolio_single_design {
+        margin-bottom: 20px;
+    }
+
+    ._personal_port_portfolio_all_design_btn_link {
+        width: 150px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    ._personal_port_portfolio_top_cont_btn.nav-item:last-child {
+        margin: 0 0 20px;
+    }
+
+    /* Portfolio Website testimonial */
+    ._personal_port_testimonial_wrapper {
+        padding: 55px 0 131px 0;
+    }
+
+    ._personal_port_testimonial_main_wrap {
+        padding: 20px 20px;
+    }
+
+    ._personal_port_testimonial_top_cont_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_testimonial_top_cont_para {
+        max-width: 89%;
+        font-size: 14px;
+    }
+
+    ._personal_port_testimonial_arrows {
+        left: 7px;
+        bottom: -182%;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_testimonial_btm_cont_title {
+        font-size: 14px;
+    }
+
+    /* Portfolio Website Contact */
+    ._personal_port_contact_r8_cont_title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    ._personal_port_contact_r8_cont_para {
+        margin-bottom: 28px;
+        font-size: 14px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    ._personal_port_contact_form_textarea {
+        padding: 17px 17px 70px;
+    }
+
+    form._personal_port_contact_form {
+        margin-top: 38px;
+    }
+
+    ._personal_port_contact_form_submit {
+        width: 150px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    /* Portfolio Website footer */
+    ._personal_port_footer_top_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_footer_list_item_link {
+        font-size: 14px;
+    }
+
+    ._personal_port_footer_btm_para {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+
+    /* Portfolio Website header herosection  */
+    ._personal_port_header_details_clients_title {
+        max-width: 52%;
+    }
+
+    ._work_design_2 {
+        display: none;
+    }
+
+    ._work_design_3 {
+        display: none;
+    }
+
+    ._personal_port_recent_work {
+        margin-top: 32px;
+    }
+
+    ._personal_port_recent_work_left_cont_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_recent_work_left_cont {
+        margin-bottom: 20px;
+    }
+
+    ._personal_port_recent_work_design_group {
+        padding-top: 55px;
+    }
+
+    ._personal_port_header_details_btn_link {
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    /* Personal Portfolio Website client */
+    ._personal_port_clients_left_cont_title {
+        max-width: 82%;
+    }
+
+    ._personal_port_clients_left_cont {
+        margin-top: 28px;
+    }
+
+    /* Personal Portfolio Website Services */
+    ._personal_port_services_left_cont_top_line {
+        width: 339px;
+    }
+
+    /* Personal Portfolio Website footer */
+    ._personal_port_footer_grp_details_title {
+        font-size: 19px;
+    }
+
+    ._personal_port_footer_grp_details_para {
+        font-size: 15px;
+    }
+}
+
+/* variable */
+:root {
+    --color1: #0F0D1C;
+    --color2: #FFFFFF;
+    --color3: #756BEE;
+    --color4: #646371;
+    --bg1: #FFFAE9;
+}
